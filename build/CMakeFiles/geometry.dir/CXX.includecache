@@ -1,0 +1,26 @@
+#IncludeRegexLine: ^[ 	]*#[ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+../include/geometry2d.h
+vector
+-
+vec2d.h
+../include/vec2d.h
+iostream
+-
+
+../include/vec2d.h
+cmath
+-
+
+/Users/olga_oblomova/Documents/Danil/srsbsns/coolcat/geometry/src/main.cpp
+iostream
+-
+geometry2d.h
+/Users/olga_oblomova/Documents/Danil/srsbsns/coolcat/geometry/src/geometry2d.h
+
