@@ -21,7 +21,7 @@ struct Polygon{
 		coords.push_back(vec(x, y));
 	}
 
-	bool intersect(Polygon b){
+	bool intersect(Polygon b, bool first = true){
 		double length, left1, left2, right1, right2, tmp_i, 
 			tmp_j, ax, ay, bx, by, projection, pr_2;
 		bool init_1, init_2;
@@ -66,7 +66,10 @@ struct Polygon{
 			if (right1 < left2 || right2 < left1)
 				return false;
 		}
-		return true;
+		if (first)
+			return b.intersect(*this, false);
+		else
+			return true;
 	}
 };
 
