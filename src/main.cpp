@@ -20,7 +20,11 @@ int main(){
 		cin >> tmpx >> tmpy;
 		b.add_coord(tmpx, tmpy);
 	}
-	cout << a.intersect(b) << endl;
+	vec ans = a.intersect(b);
+	if (ans.isNull())
+		cout << "no intersection" << endl;
+	else
+		cout << ans.x << " " << ans.y << endl;
 
 	return 0;
 }
